@@ -1,6 +1,6 @@
 # Xamarin_Trabalho
 
-O PROJETO ESTÁ BRANCH "Fastbill
+O PROJETO ESTÁ NA BRANCH: "Fastbill
 Repositório para a Atividade 7 de Xamarin
 
 ## Introdução:

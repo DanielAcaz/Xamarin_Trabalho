@@ -66,6 +66,7 @@ Ao clicar em adicionar, você é redireciondo para uma tela onde deve ser coloca
 ### Adicionando um Local
 
 Após preencher com as informações, é só clicar em salvar que você é redirecionado para a tela de lista com o local adicionado.
+A persistencia do local é feita através do SQLite, no banco de dados do celular.
 
 <img src="https://github.com/DanielAcaz/Xamarin_Trabalho/blob/master/img3.png" width="250" height="400" align="right" />
 
@@ -80,6 +81,8 @@ Ao clicar em "Edit" podemos ver as mesmas informações cadastradas, mas agora c
 ### MAPA
 
 Ao clicar em "Map" você é redirecionado para o mapa, exatamente no endereço especificado do local:
+Para mostrar o endereço é feita uma requisição REST (GET) para a API de mapas do google, enviando o endereço e recebendo um objeto JSON com a latitude e longitude (entre outras informações).
+Depois é enviado o valor da latitude e longitude para a lib de Mapa do Xamarin.
 
 <img src="https://github.com/DanielAcaz/Xamarin_Trabalho/blob/master/img6.png" width="250" height="400"/>
 

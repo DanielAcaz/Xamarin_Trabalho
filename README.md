@@ -29,7 +29,7 @@ Público joven entre 18 á 39 anos que frequente bares e restaurantes frequentem
 
 ### Requisito Mínimo:
 
-*OBS.: De acordo com o arquivo da Atividade 7, era necessário apenas um item de cada categoria, porém o nosso aplicativo abrangeu alguns itens a mais:
+*OBS.: De acordo com o arquivo da Atividade 7, era necessário apenas um item de cada categoria, porém o nosso aplicativo* abrangeu alguns itens a mais:
 
 #### Básico:
   - Code vs XAML
@@ -58,7 +58,8 @@ A primeira tela mostra lista de locais cadastrados e um botão para adicionar no
 
 ### Adicionar um local:
 
-Ao clicar em adicionar, você é redireciondo para uma tela onde deve ser colocado as infomações do local. Obs.: Colocar o enderço o mais detalhado possível para que o mapa encontre o local corretamente.
+Ao clicar em adicionar, você é redireciondo para uma tela onde deve ser colocado as infomações do local. 
+*Obs.: Colocar o enderço o mais detalhado possível para que o mapa encontre o local corretamente.*
 
 <img src="https://github.com/DanielAcaz/Xamarin_Trabalho/blob/master/img2.png" width="250" height="400" />
 

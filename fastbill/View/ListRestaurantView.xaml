@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="fastbill.View.ListRestaurantView">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Restaurants" FontSize="20"/>
+                <Label Text="find your restaurant now!" FontSize="12"/>
+            </StackLayout>
+            <Button Text="Adicionar" Clicked="AddRestaurant"/>
+            <ListView x:Name="List">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="100"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <StackLayout Grid.Column="0">
+                                    <Label Text="{Binding NameRestaurant}" FontAttributes="Bold"/>
+                                    <Label Text="{Binding AddressRestaurant}"/>
+                                    <Label Text="{Binding DescriptionRestaurant}"/>
+                                </StackLayout>
+                                    <StackLayout Grid.Column="1" Orientation="Horizontal">
+                                    <Label Text="Map">
+                                        <Label.GestureRecognizers>
+                                           <TapGestureRecognizer Tapped= "MapAction" CommandParameter="{Binding .}"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                    <Label Text=" | "/>
+                                    <Label Text="Edit">
+                                        <Label.GestureRecognizers>
+                                           <TapGestureRecognizer Tapped= "EditAction" CommandParameter="{Binding .}"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </StackLayout>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
